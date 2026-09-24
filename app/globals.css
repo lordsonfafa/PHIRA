@@ -1,5 +1,25 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
+@plugin "daisyui/theme" {
+  name: "phira";
+  default: true;
+  --color-primary: #f5a623;
+  --color-primary-content: #0f1830;
+  --color-neutral: #1b2a4a;
+  --color-base-100: #f8fafc;
+  --color-base-content: #333333;
+}
+
+@theme {
+  --color-slate: #1b2a4a;
+  --color-slate-dark: #0f1830;
+  --color-orange: #f5a623;
+  --color-gold: #eab308;
+  --color-off-white: #f8fafc;
+  --color-charcoal: #333333;
+  --color-mid-gray: #8a8d93;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,12 +32,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
