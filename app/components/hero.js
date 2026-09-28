@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -19,9 +20,11 @@ const Hero = () => {
           systems, and pump maintenance — built to spec, installed to last, and
           backed by dependable after-service support.
         </p>
-        <button className="btn bg-orange text-charcoal hover:bg-slate-dark hover:text-white">
-          Request a consultation
-        </button>
+        <Link href="/contact">
+          <button className="btn bg-orange text-charcoal hover:bg-slate-dark hover:text-white">
+            Request a consultation
+          </button>
+        </Link>
       </div>
     </section>
   );

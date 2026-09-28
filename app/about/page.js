@@ -101,13 +101,13 @@ export default function AboutPage() {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-slate">
-                Brakye Theophilus Yeboah Brakye
+                Brakye Theophilus Yeboah
               </h3>
               <div className="mb-3.5 text-sm font-medium text-orange">
                 CEO &amp; Founder
               </div>
               <p className="text-sm leading-relaxed text-charcoal">
-                Brakye Theophilus Yeboah Brakye founded Phira Construction &amp;
+                Brakye Theophilus Yeboah founded Phira Construction &amp;
                 Engineering on a foundation of hands-on technical expertise and
                 international training. He holds a Bachelor&apos;s degree in
                 Mechanical Engineering from Belgorod State Technological
@@ -179,10 +179,6 @@ export default function AboutPage() {
                   fill
                 />
               </div>
-              {/* Swap each div above for:
-              <Image src="/about/team-1.jpg" alt="The Phira team on site" fill className="object-cover rounded-lg" />
-              (wrap in a relative div for `fill` to work — see the background-image conversation earlier)
-              */}
             </div>
           </div>
         </div>
