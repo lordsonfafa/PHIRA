@@ -12,8 +12,8 @@ const ProjectCard = ({ image, title, text }) => {
     //   </div>
     // </div>
     <div className="card bg-base-100 shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      <figure className="w-full aspect-video bg-slate-50 overflow-hidden flex items-center justify-center p-2">
-        <img src={image} alt={title} className="w-full h-full object-contain" />
+      <figure className="bg-slate-50 overflow-hidden flex items-center justify-center">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
       </figure>
       <div className="card-body bg-white">
         <h2 className="card-title">{title}</h2>

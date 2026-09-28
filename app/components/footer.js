@@ -49,7 +49,7 @@ export default function Footer() {
               <li>Phiraengandcons@gmail.com</li>
               <li>+233 59 325 3373</li>
               <li>+233 59 366 1340</li>
-              <li>P.O. Box 4369, Nsakina, Amasaman</li>
+              <li>P.O. Box 4369, Kwashieman, Bus Stop</li>
             </ul>
           </div>
 
