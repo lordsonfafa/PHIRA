@@ -33,7 +33,7 @@ export default function AboutPage() {
           ABOUT PHIRA
         </div>
         <h1 className="mx-auto max-w-3xl text-4xl font-bold text-white md:text-5xl">
-          Building Ghana&apos;s Infrastructure Since 2008
+          Installed to Last, Maintained to Perform
         </h1>
       </div>
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
           {/* Background image */}
           <div className="relative h-[460px] w-full max-w-[700px] overflow-hidden rounded-lg border border-white bg-linear-135 from-[#22365c] to-[#0E172A]">
             <Image
-              src="/assets/about.png"
+              src="/assets/about.jpg"
               alt="Phira project site"
               fill
               className="object-cover"

@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           {/* Email signup */}
-          <div>
+          {/* <div>
             <h4 className="mb-3 text-xs font-medium tracking-wide text-orange">
               STAY UPDATED
             </h4>
@@ -90,7 +90,7 @@ export default function Footer() {
                 </button>
               </form>
             )}
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-10 border-t border-mid-gray/20" />

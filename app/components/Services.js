@@ -1,5 +1,6 @@
 import React from "react";
 import Subservice from "./subservice";
+import { GasIcon, ShieldIcon, ZapIcon } from "./Icons";
 // import Fix from "@/public/assets/icons/icon-2.svg";
 
 const Services = () => {
@@ -18,19 +19,19 @@ const Services = () => {
       </div>
       <div className="p-6">
         <Subservice
-          logo="/assets/icons/icon-2.svg"
+          logo={<ZapIcon />}
           title="Electrical Engineering"
           number="01"
           text="Full-scope electrical engineering services for commercial and industrial sites, from design through installation."
         />
         <Subservice
-          logo="/assets/icons/icon-2.svg"
+          logo={<GasIcon />}
           title="Fuel & Gas Systems"
           number="02"
           text="Fuel line installation, gas system setup, and gas dispenser installation — done to safety code and built for reliable daily operation."
         />
         <Subservice
-          logo="/assets/icons/icon-2.svg"
+          logo={<ShieldIcon />}
           title="Maintenance & Repair"
           number="03"
           text="Ongoing maintenance and repair for mechanical and electronic pumps, keeping your systems running without unplanned downtime."
