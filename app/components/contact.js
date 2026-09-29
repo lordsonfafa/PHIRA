@@ -19,7 +19,7 @@ const Contact = () => {
           </div>
           <div className="p-1">
             <p className="text-sm text-orange">ADDRESS</p>
-            <p className="text-xl">P.O. Box 4369, Nsakina, Amasaman</p>
+            <p className="text-xl">P.O. Box 4369, Kwashieman, Bus Stop</p>
           </div>
         </div>
         <div className="p-6">
