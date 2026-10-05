@@ -4,7 +4,7 @@ import ContactForm from "./form";
 const Contact = () => {
   return (
     <section className="py-10 bg-off-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-slate text-white w-4/5 mx-auto rounded-2xl gap-4 w-full max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-slate text-white md:w-4/5 mx-auto rounded-2xl gap-4 w-full max-w-7xl">
         <div className="p-6 mt-3 space-y-4">
           <h1 className="font-bold text-4xl m-3">
             Have a project in mind? Let's talk electrical, fuel & gas systems.
