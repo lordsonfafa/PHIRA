@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Phira Engineering & Constructions
 
-## Getting Started
+Website for **Phira Engineering & Constructions**, an engineering company in Accra, Ghana that installs and services electrical, fuel and gas systems. I designed and built it for the company as a real client project.
 
-First, run the development server:
+**Live site:** https://phiraconsandeng.netlify.app
+
+## What the site does
+
+- Presents the company's services: electrical engineering, fuel and gas systems, and maintenance and repair of mechanical and electronic pumps.
+- Shows a portfolio of completed work (pump installation, wiring, fuel dispenser installation, gas system servicing) with photos.
+- Gives potential customers a contact form. Submissions are emailed straight to the company, so no enquiry sits unseen in a database.
+- Responsive layout that works on phones, tablets and desktops.
+
+## Pages
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Home: hero, services overview, featured projects, contact call to action |
+| `/about` | The company and its team |
+| `/projects` | Portfolio of completed jobs |
+| `/contact` | Contact form |
+
+## Tech stack
+
+| Area | Tools |
+| --- | --- |
+| Framework | Next.js (App Router) and React |
+| Styling | Tailwind CSS with daisyUI |
+| Email | Resend, called from a Next.js API route (`app/api/contact/route.js`) |
+| Hosting | Netlify |
+
+## Running it locally
+
+```bash
+git clone https://github.com/lordsonfafa/PHIRA.git
+cd PHIRA
+npm install
+```
+
+Create a `.env.local` file:
+
+```
+RESEND_API_KEY=your-resend-api-key
+CONTACT_FORM_RECIPIENT_EMAIL=where-enquiries-should-arrive@example.com
+```
+
+Then:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Without the two environment variables the site still works, but submitting the contact form returns an error.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  page.js              home page
+  about/               about page
+  projects/            portfolio page
+  contact/             contact page
+  api/contact/route.js server route that sends the enquiry email
+  components/          navbar, hero, services, project cards, form, footer
+public/assets/         photos, icons and videos
+```
 
-## Learn More
+## Notes
 
-To learn more about Next.js, take a look at the following resources:
+- The contact form sends from Resend's shared test sender until the company's own domain is verified. Once a custom domain is connected, the sender address in `route.js` should change to it.
+- Secrets live only in environment variables (set in the Netlify dashboard for production). Nothing sensitive is committed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by **Borngreat**, a Computer Science student at KNUST, Ghana. I also built [Susu Tracker](https://github.com/lordsonfafa/Susu-Tracker), a React Native app for running savings groups.
