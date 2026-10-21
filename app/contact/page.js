@@ -155,7 +155,7 @@ export default function ContactPage() {
                     </h3>
                     <p className="text-slate-600 text-sm mt-0.5">
                       <a
-                        href="mailto:phiraengandcons@gmail.com"
+                        href="mailto:info@phiraconsandeng.com"
                         className="hover:text-amber-600 transition-colors"
                       >
                         info@phiraconsandeng.com
