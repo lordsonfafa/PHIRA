@@ -158,7 +158,7 @@ export default function ContactPage() {
                         href="mailto:phiraengandcons@gmail.com"
                         className="hover:text-amber-600 transition-colors"
                       >
-                        phiraengandcons@gmail.com
+                        info@phiraconsandeng.com
                       </a>
                     </p>
                   </div>
