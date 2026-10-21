@@ -46,7 +46,7 @@ export default function Footer() {
               CONTACT
             </h4>
             <ul className="space-y-2 text-sm text-mid-gray">
-              <li>Phiraengandcons@gmail.com</li>
+              <li>info@phiraconsandeng.com</li>
               <li>+233 59 325 3373</li>
               <li>+233 59 366 1340</li>
               <li>P.O. Box 4369, Kwashieman, Bus Stop</li>
